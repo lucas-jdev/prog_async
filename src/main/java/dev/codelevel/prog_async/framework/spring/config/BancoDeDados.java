@@ -1,5 +1,6 @@
 package dev.codelevel.prog_async.framework.spring.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.ReactiveMongoDatabaseFactory;
@@ -12,9 +13,12 @@ import com.mongodb.reactivestreams.client.MongoClients;
 @Configuration
 public class BancoDeDados {
  
+    @Value("${URL_DB_PROD}")
+    private String url;
+
     @Bean
     MongoClient mongoClient() {
-        return MongoClients.create("mongodb://localhost:27017");
+        return MongoClients.create(url);
     }
 
     @Bean
