@@ -1,0 +1,20 @@
+### Criar um cliente
+POST http://localhost:8080/v1/clientes HTTP/2.0
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "cpf": "515.122.123-12",
+    "idade": 20
+}
+
+### Buscar todos os clientes
+GET http://localhost:8080/v1/clientes HTTP/2.0
+Accept: application/ndjson
+
+### Buscar cliente por CPF
+GET http://localhost:8080/v1/clientes/111.111.111-11 HTTP/2.0
+Accept: application/json
+
+### Deletar cliente por CPF
+DELETE http://localhost:8080/v1/clientes/515.122.123-12 HTTP/2.0
