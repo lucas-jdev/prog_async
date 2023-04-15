@@ -11,7 +11,7 @@
 	<groupId>dev.codelevel</groupId>
 	<artifactId>prog_async</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Programacao_Assincrona</name>
 	<description>Projetinho simples de programação assíncrona</description>
 	<properties>
