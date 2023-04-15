@@ -35,7 +35,7 @@ public class DeletaClienteUseCase {
         return new EntradaDeletaClienteUseCase(cpf);
     }
 
-    private record EntradaDeletaClienteUseCase(String cpf) {
+    public record EntradaDeletaClienteUseCase(String cpf) {
     }
 
 }

@@ -39,7 +39,7 @@ public class CriaClienteUseCase {
         return new EntradaCriaClienteUseCase(nome, cpf, idade);
     }
 
-    private record EntradaCriaClienteUseCase(
+    public record EntradaCriaClienteUseCase(
             String nome,
             String cpf,
             int idade) {
